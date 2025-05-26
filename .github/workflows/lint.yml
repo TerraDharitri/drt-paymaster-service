@@ -26,4 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci --force
+        working-directory: ./drt-paymaster-service
       - run: npm run lint
+        working-directory: ./drt-paymaster-service
